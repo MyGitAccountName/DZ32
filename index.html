@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DZ 32</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!--<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lora" />-->
+    <!--<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap">-->
+    <!--<link href="https://fonts.googleapis.com/css2?family=Lora:wght@600&display=swap" rel="stylesheet">-->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="for_chrome.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-3 col-12-sm">
+                    <h2>soulvibes</h2>
+                </div>
+                <div class="col-9 col-12-sm">
+                    <div class="header-nav">
+                        <a href="#">home</a>
+                        <a href="#">genres</a>
+                        <a href="#">event</a>
+                        <a href="#">news</a>
+                        <a href="#">contact</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-8 col-12-sm">
+                    <h1>High Quality Internet Music Stations</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="player">
+        <div class="container">
+            <div class="row">
+                <div class="col-1">
+                    <a href="#" class="player__play"><img src="images/icons/play.png" alt="play"></a>
+                </div>
+                <div class="col-7">
+                    <div class="player__info">
+                        <div class="player__info-text">
+                            <span>The Diary of Jane - Breaking Benjamin</span>
+                            <span>3:20</span>
+                        </div>
+                        <input type="range" class="player__info-timeLine" id="slider" oninput=moveSlider() min="0" max="100" value="10">
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="player__actions">
+                        <a href="#" class="player__actions-item"><img src="images/icons/volume.png" alt="play"></a>
+                        <a href="#" class="player__actions-item"><img src="images/icons/prev.png" alt="play"></a>
+                        <a href="#" class="player__actions-item"><img src="images/icons/next.png" alt="play"></a>
+                        <a href="#" class="player__actions-item"><img src="images/icons/repeat.png" alt="play"></a>
+                        <a href="#" class="player__actions-item"><img src="images/icons/playlist.png" alt="play"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="stations">
+        <div class="container">
+            <h2 class="with-line">Genres Stations</h2>
+            <div class="row">
+                <div class="col-3 col-6-sm">
+                    <a href="#" class="stations-item">
+                        <img src="images/icons/TT.png" alt="Trending Top" class="stations-item__image">
+                        <p class="stations-item__Name">Trending Top</p>
+                    </a>
+                </div>
+                <div class="col-3 col-6-sm">
+                    <a href="#" class="stations-item">
+                        <img src="images/icons/Rock.png" alt="Rock" class="stations-item__image">
+                        <p class="stations-item__Name">Rock</p>
+                    </a>
+                </div>
+                <div class="col-3 col-6-sm">
+                    <a href="#" class="stations-item">
+                        <img src="images/icons/RnB.png" alt="R n B" class="stations-item__image">
+                        <p class="stations-item__Name">R n B</p>
+                    </a>
+                </div>
+                <div class="col-3 col-6-sm">
+                    <a href="#" class="stations-item">
+                        <img src="images/icons/Alternative.png" alt="Alternative" class="stations-item__image">
+                        <p class="stations-item__Name">Alternative</p>
+                    </a>
+                </div>
+                <div class="col-3 col-6-sm">
+                    <a href="#" class="stations-item">
+                        <img src="images/icons/Country.png" alt="Country" class="stations-item__image">
+                        <p class="stations-item__Name">Country</p>
+                    </a>
+                </div>
+                <div class="col-3 col-6-sm">
+                    <a href="#" class="stations-item">
+                        <img src="images/icons/Pop.png" alt="Pop" class="stations-item__image">
+                        <p class="stations-item__Name">Pop</p>
+                    </a>
+                </div>
+                <div class="col-3 col-6-sm">
+                    <a href="#" class="stations-item">
+                        <img src="images/icons/Jazz.png" alt="Jazz" class="stations-item__image">
+                        <p class="stations-item__Name">Jazz</p>
+                    </a>
+                </div>
+                <div class="col-3 col-6-sm">
+                    <a href="#" class="stations-item">
+                        <img src="images/icons/Reggae.png" alt="Reggae" class="stations-item__image">
+                        <p class="stations-item__Name">Reggae</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="row">
+                <a href="#" class="stations-button">
+                    <p class="stations-button__text">load more</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+<div class="events">
+    <div class="container">
+        <div class="row">
+            <div class="col-5 col-12-sm">
+                <h2 class="with-line">Upcoming Events</h2>
+                <div class="events-list">
+                    <a href="#" class="events-list__item">
+                        <span class="events-list__item-date">Wednesday&nbsp&nbsp/ 22 Dec 2017 /&nbsp&nbsp12:00 PM</span>
+                        <h2 class="events-list__item-title">Linkin Park</h2>
+                        <p class="events-list__item-place">Ziggo Dome</p>
+                        <span class="events-list__item-address">De Passage 100, Amsterdam, Netherlands</span>
+                    </a>
+                    <a href="#" class="events-list__item">
+                        <span class="events-list__item-date">Wednesday&nbsp&nbsp/ 22 Dec 2017 /&nbsp&nbsp12:00 PM</span>
+                        <h2 class="events-list__item-title">Burger kill</h2>
+                        <p class="events-list__item-place">Ziggo Dome</p>
+                        <span class="events-list__item-address">De Passage 100, Amsterdam, Netherlands</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-7 col-12-sm">
+               <img src="images/People.png" alt="People" class="events__image">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="news">
+    <div class="container">
+        <h2 class="with-line">Latest News</h2>
+        <div class="row">
+            <div class="col-4 col-12-sm new">
+                <p class="new__date">21 MARCH 2017</p>
+                <h3 class="new__name">Donec ac pellentesque justo, quis rutrum tortor</h3>
+                <p class="new__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam feugiat eget eros
+                    eget bibendum. Suspendisse finibus ultricies dapibus. Nam sed imperdiet diam</p>
+                <a href="#" class="new__button">
+                    <p>Read more</p>
+                </a>
+            </div>
+            <div class="col-4 col-12-sm new">
+                <p class="new__date">21 MARCH 2017</p>
+                <h3 class="new__name">Donec ac pellentesque justo, quis rutrum tortor</h3>
+                <p class="new__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam feugiat eget eros
+                    eget bibendum. Suspendisse finibus ultricies dapibus. Nam sed imperdiet diam</p>
+                <a href="#" class="new__button">
+                    <p>Read more</p>
+                </a>
+            </div>
+            <div class="col-4 col-12-sm new">
+                <p class="new__date">21 MARCH 2017</p>
+                <h3 class="new__name">Donec ac pellentesque justo, quis rutrum tortor</h3>
+                <p class="new__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam feugiat eget eros
+                    eget bibendum. Suspendisse finibus ultricies dapibus. Nam sed imperdiet diam</p>
+                <a href="#" class="new__button">
+                    <p>Read more</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="contact">
+    <div class="container">
+        <h2 class="with-line">Contact Us</h2>
+        <div class="row contact-info">
+            <div class="col-8 col-12-sm">
+                <h1>Join Our Community</h1>
+                <p>Be among the first to hear about our new tracks, events, news and so much more!</p>
+                <div class="contact-info__email">
+                    <input type="text" id = "contact-info__email_address" placeholder="Your email address">
+                    <input type="button" value="SUBSCRIBES" id = "contact-info__email_button">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-7 col-12-sm footer__text">
+                <p>Copyright © 2017 soulvibes.&nbsp&nbspAll rights reserved</p>
+            </div>
+            <a href="#" class="col-1 footer__social_grey"><img src="images/icons/FB_icon.ico" alt="facebook"></a>
+            <a href="#" class="col-1 footer__social_grey"><img src="images/icons/TWITTER_icon.ico" alt="twitter"></a>
+            <a href="#" class="col-1 footer__social_grey"><img src="images/icons/instagram_f_icon.ico" alt="instagram"></a>
+            <a href="#" class="col-1 footer__social_grey"><img src="images/icons/PINTEREST_icon.ico" alt="pinterest"></a>
+            <a href="#" class="col-1 footer__social_grey"><img src="images/icons/YOUTUBE_icon.ico" alt="youtube"></a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
